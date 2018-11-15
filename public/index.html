@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+     <title>Document</title>
 </head>
 <body>
-    <h1>Conntected...</h1>
+    <header>
+        
+        
+    </header>
+    <main>
+    <div id='date'>Gina's to do list</div>
+    <form id="frmSendToDo">
+        <input id="inputTask" type="text"  style="text-transform: uppercase">
+        <button id="btnSubmit" type="submit" hidden><i class="fas fa-share btn-style"></i></button>
+    </form>
+     <div id="list">
+        <ul id="toDoList"></ul>
+    </div> 
+</main>
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
+<script src="index.js"></script>
 </body>
+
 </html>

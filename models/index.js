@@ -1,4 +1,4 @@
 module.exports = {
-    // chat: require("./chat"),
+    toDoList: require("./toDoList"),
     // message: require("./message")
 };

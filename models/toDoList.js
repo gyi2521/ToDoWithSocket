@@ -6,17 +6,22 @@ const Schema = mongoose.Schema;
 const toDoSchema = new Schema({
     task: {
         type: String,
-        trim: true,
-        required: true
+        default: 'ginaTask'
+        // trim: true,
+        // required: true
     },
     done: {
         type: Boolean,
-        required: true,
+        //required: true,
         default: false
+    },
+    created: {
+        type: Date,
+        default: Date.now
     }
-})
+});
 
-var toDoArray = mongoose.model('toDoArray', toDoSchema);
+var toDoList = mongoose.model('toDoList', toDoSchema);
  
   // Note how we export the array. This makes it accessible to other files using require.
-  module.exports = toDoArray;
+  module.exports = toDoList;
