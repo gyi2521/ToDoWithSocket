@@ -7,9 +7,7 @@ module.exports = function(io){
             .then(function (result) {
                 console.log(result);
                 io.emit('new-task', result);
-        })  ;
-            
-            
+            });                      
         })
 
         socket.on('complete-task', function(data){
