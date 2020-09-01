@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static('public'));
 //mongoose.connect('mongodb://gyi:NamJee01@ds121282.mlab.com:21282/heroku_js7qh2wp', {useNewUrlParser: true});
-mongoose.connect('mongodb+srv://gina2521:NamJee2521@cluster-todosocket.qd1ot.mongodb.net/heroku_js7qh2wp?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://gyi:NamJee01@cluster-todosocket.qd1ot.mongodb.net/heroku_js7qh2wp?retryWrites=true&w=majority')
 //mongoose.connect('mongodb://localhost/toDoWithSocket', {useNewUrlParser: true});
 
 require('./sockets/todo-sockets')(io);
