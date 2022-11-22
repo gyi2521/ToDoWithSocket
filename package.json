@@ -21,6 +21,6 @@
     "heroku": "^7.42.13",
     "moment": "^2.22.2",
     "mongoose": "^5.10.2",
-    "socket.io": "^2.1.1"
+    "socket.io": "^2.5.0"
   }
 }
